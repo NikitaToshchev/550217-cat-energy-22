@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Никита Тощев](https://up.htmlacademy.ru/adaptive/22/user/550217).
-* Наставник: `Неизвестно`.
+- Студент: [Никита Тощев](https://up.htmlacademy.ru/adaptive/22/user/550217).
+- Наставник:[Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
