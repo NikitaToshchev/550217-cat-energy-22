@@ -1,0 +1,30 @@
+.promo {
+  margin-bottom: 22px;
+  padding-top: 29px;
+  color: $basic-white;
+  font-weight: 400;
+  text-align: center;
+  background-color: $basic-white;
+  background-image: url("../img/promo-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.promo__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+// .promo__button {
+// }

@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 26px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-white;
+  background-color: $basic-green;
+
+  &:hover {
+    background-color: $special-green;
+  }
+
+  &:focus {
+    background-color: special-green;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+    background-color: $special-green;
+  }
+}
