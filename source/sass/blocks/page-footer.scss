@@ -18,25 +18,18 @@
 }
 
 .page-footer__copyright {
-  padding: 30px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 23px 0 10px 0;
 }
 
 .page-footer__copyright-link {
-  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-Arial;
   font-size: 16px;
   line-height: 18px;
   color: $basic-dark-grey;
 }
 
-.page-footer__copyright-logo {
-  position: relative;
-}
-
-.page-footer__copyright-logo svg {
-  position: absolute;
-  top: -18px;
-  left: -33px;
-}
+// .page-footer__copyright-logo {
+// }

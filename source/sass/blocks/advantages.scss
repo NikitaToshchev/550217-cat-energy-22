@@ -8,10 +8,9 @@
 }
 
 .advantages__list {
+  @include list-reset;
   display: grid;
   grid-row-gap: 20px;
-
-  @include ul-reset;
 }
 
 .advantages__item {
@@ -35,7 +34,7 @@
 .advantages__description {
   margin: 0;
   max-width: 200px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-Arial;
   font-size: 14px;
   line-height: 18px;
   color: $basic-dark-grey;

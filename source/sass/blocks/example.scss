@@ -12,7 +12,7 @@
 
 .example__description {
   margin-bottom: 26px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-Arial;
   font-size: 14px;
   line-height: 18px;
   color: $basic-dark-grey;
@@ -31,6 +31,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  color: $basic-black;
   text-transform: uppercase;
 }
 // .example__price-value {
