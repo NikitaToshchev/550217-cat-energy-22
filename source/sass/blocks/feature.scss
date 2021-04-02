@@ -1,0 +1,31 @@
+.feature {
+  position: relative;
+  padding: 15px 10px;
+  width: 123px;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+}
+
+.feature__value {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.feature__title {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  width: 80px;
+  top: 46px;
+  left: 20px;
+  font-family: $font-Arial;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  color: $basic-dark-grey;
+  background-color: $smoky-white;
+}

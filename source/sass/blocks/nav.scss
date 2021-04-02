@@ -1,0 +1,56 @@
+// .nav {
+// }
+.nav__list {
+  @include list-reset;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.nav__item {
+  padding: 22px 0;
+  border-bottom: 1px solid $special-light-grey;
+
+  &:first-child {
+    border-top: 1px solid $special-light-grey;
+  }
+}
+
+
+.nav__link {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-black;
+
+  // &--active {
+  // }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav__toggle {
+  display: none;
+  width: 19px;
+  height: 19px;
+  background-color: $basic-white;
+  background-image: url("../img/icon/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}

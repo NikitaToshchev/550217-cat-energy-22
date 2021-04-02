@@ -1,0 +1,30 @@
+// .contacts {
+// }
+
+.contacts__text {
+  margin-bottom: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__invite {
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $dark-grey;
+}
+
+.contacts__adress {
+  width: 140px;
+  font-family: $font-Arial;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-dark-grey;
+}
+
+.contacts__map {
+  margin: 0 auto;
+  width: 320px;
+}

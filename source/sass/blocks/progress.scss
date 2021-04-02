@@ -1,0 +1,22 @@
+// .progress {
+// }
+
+.progress__img--after {
+  display: none;
+}
+
+.progress__buttons {
+  display: flex;
+}
+
+.progress__button {
+  font-family: $font-Oswald;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: $smoky-white;
+}
+
+// .progress__bar {
+// }
