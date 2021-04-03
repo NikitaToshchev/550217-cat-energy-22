@@ -1,0 +1,79 @@
+// .order {
+// }
+
+.order__title {
+  margin: 27px 0 35px 0;
+}
+
+.order__text {
+  margin-bottom: 40px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.order__form {
+  margin-bottom: 45px;
+}
+
+.order__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  &--catdata {
+    margin-bottom: 10px;
+  }
+
+  &--programs {
+    padding-top: 28px;
+    border-top: 1px solid $light-grey-2;
+    border-bottom: 1px solid $light-grey-2;
+    margin-bottom: 27px;
+  }
+
+  &--contacts {
+    margin-bottom: 10px;
+  }
+
+  &--comments {
+    margin-bottom: 14px;
+  }
+
+  &--extra-goods {
+    margin-bottom: 15px;
+  }
+}
+
+.order__legend {
+  margin-bottom: 36px;
+}
+
+.order__input {
+  margin-bottom: 14px;
+}
+
+.order__radio {
+  margin: 0 0 26px 46px;
+
+  &:last-child {
+    margin-bottom: 23px;
+  }
+}
+
+.order__checkbox {
+  margin: 0 0 25px 46px;
+}
+
+.order__button {
+  margin-bottom: 6px;
+  padding: 11px 26px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.order__required {
+  font-family: $font-Arial;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}

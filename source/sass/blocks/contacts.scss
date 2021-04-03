@@ -1,5 +1,8 @@
-// .contacts {
-// }
+.contacts {
+  &--grey-background {
+    background-color: $basic-grey;
+  }
+}
 
 .contacts__text {
   margin-bottom: 9px;
