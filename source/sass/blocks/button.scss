@@ -11,6 +11,8 @@
   text-decoration: none;
   color: $basic-white;
   background-color: $basic-green;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $special-green;

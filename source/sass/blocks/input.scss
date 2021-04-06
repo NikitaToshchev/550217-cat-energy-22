@@ -1,0 +1,47 @@
+.input {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-dark-grey;
+  text-transform: uppercase;
+
+  span {
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 10px 13px 15px;
+    font: inherit;
+    text-transform: uppercase;
+    border: 1px solid $special-light-grey-1;
+  }
+
+  input::-webkit-input-placeholder,
+  input::-moz-placeholder,
+  input:-moz-placeholder,
+  input:-ms-input-placeholder,
+  input::-ms-input-placeholder,
+  input::placeholder,
+  input:placeholder-shown {
+    color: $basic-dark-grey;
+  }
+
+  textarea {
+    padding: 10px 13px;
+    font: inherit;
+    text-transform: uppercase;
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+    border-color: $special-light-grey-1;
+  }
+}
+
+// .input--email {
+// }
+
+// .input--tel {
+// }

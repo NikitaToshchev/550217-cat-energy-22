@@ -1,0 +1,53 @@
+.choice {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+
+  span {
+    order: 2;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  // input {
+
+  //   &:checked .choice::after{
+  //     @include pseudo;
+  //       top: 1px;
+  //       left: -33px;
+  //       width: 13px;
+  //       height: 13px;
+  //       background-color: $basic-green;
+  //       border-radius: 50%;
+  //     }
+  //   }
+
+  &::before {
+    @include pseudo;
+    top: -7px;
+    left: -46px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-grey;
+    border-radius: 50%;
+  }
+
+  &--check {
+    &::before {
+      border-radius: 0;
+    }
+
+    &::after {
+      top: 0;
+      left: -35px;
+      width: 18px;
+      height: 14px;
+      background-color: transparent;
+      background-image: url("../img/icon/check.svg");
+      border-radius: 50%;
+    }
+  }
+}
