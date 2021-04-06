@@ -4,20 +4,3 @@
   font-weight: 400;
   color: $basic-black;
 }
-
-.title-extra {
-  position: relative;
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 400;
-  color: $basic-black;
-
-  // &::after {
-  //   @include pseudo;
-  //   top: 50%;
-  //   right: 10px;
-  //   width: 100%;
-  //   height: 2px;
-  //   background-color: $basic-green;
-  // }
-}

@@ -19,31 +19,13 @@
     border: 1px solid $special-light-grey-1;
   }
 
-  input::-webkit-input-placeholder {
-    color: $basic-dark-grey;
-  }
-
-  input::-moz-placeholder {
-    color: $basic-dark-grey;
-  }
-
-  input:-moz-placeholder {
-    color: $basic-dark-grey;
-  }
-
+  input::-webkit-input-placeholder,
+  input::-moz-placeholder,
+  input:-moz-placeholder,
+  input:-ms-input-placeholder,
+  input::-ms-input-placeholder,
+  input::placeholder,
   input:placeholder-shown {
-    color: $basic-dark-grey;
-  }
-
-  input:-ms-input-placeholder {
-    color: $basic-dark-grey;
-  }
-
-  input::-ms-input-placeholder {
-    color: $basic-dark-grey;
-  }
-
-  input::placeholder {
     color: $basic-dark-grey;
   }
 

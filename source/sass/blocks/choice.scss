@@ -34,20 +34,20 @@
     border: 1px solid $special-grey;
     border-radius: 50%;
   }
-}
 
-.choice--check {
-  &::before {
-    border-radius: 0;
-  }
+  &--check {
+    &::before {
+      border-radius: 0;
+    }
 
-  &::after {
-    top: 0;
-    left: -35px;
-    width: 18px;
-    height: 14px;
-    background-color: transparent;
-    background-image: url("../../img/icon/check.svg");
-    border-radius: 50%;
+    &::after {
+      top: 0;
+      left: -35px;
+      width: 18px;
+      height: 14px;
+      background-color: transparent;
+      background-image: url("../img/icon/check.svg");
+      border-radius: 50%;
+    }
   }
 }
