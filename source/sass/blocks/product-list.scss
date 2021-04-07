@@ -12,6 +12,11 @@
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   padding: 21px 20px 21px 20px;
+
+  &--more {
+    display: block;
+    margin-top: 40px;
+  }
 }
 
 .product-list__title {
@@ -51,11 +56,6 @@
   padding: 10px;
   font-size: 16px;
   line-height: 20px;
-}
-
-.product-list__item--more {
-  display: block;
-  margin-top: 40px;
 }
 
 .product-list__text {

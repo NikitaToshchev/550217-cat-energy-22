@@ -14,10 +14,7 @@
   border: none;
   cursor: pointer;
 
-  &:hover {
-    background-color: $special-green;
-  }
-
+  &:hover,
   &:focus {
     background-color: $special-green;
   }
@@ -31,11 +28,7 @@
     color: $basic-dark-grey;
     background-color: $basic-grey;
 
-    &:hover {
-      color: $basic-dark-grey;
-      background-color: $special-light-grey;
-    }
-
+    &:hover,
     &:focus {
       color: $basic-dark-grey;
       background-color: $special-light-grey;
