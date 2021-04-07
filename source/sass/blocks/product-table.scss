@@ -1,0 +1,16 @@
+.product-table {
+  font-family: $font-Arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $basic-dark-grey;
+  border-collapse: collapse;
+}
+
+// .product-table__row {
+// }
+
+.product-table__cell {
+  &:last-child {
+    text-align: right;
+  }
+}

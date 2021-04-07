@@ -14,10 +14,7 @@
   border: none;
   cursor: pointer;
 
-  &:hover {
-    background-color: $special-green;
-  }
-
+  &:hover,
   &:focus {
     background-color: $special-green;
   }
@@ -25,5 +22,21 @@
   &:active {
     color: rgba($basic-white, 0.3);
     background-color: $special-green;
+  }
+
+  &--grey {
+    color: $basic-dark-grey;
+    background-color: $basic-grey;
+
+    &:hover,
+    &:focus {
+      color: $basic-dark-grey;
+      background-color: $special-light-grey;
+    }
+
+    &:active {
+      color: rgba($basic-dark-grey, 0.3);
+      background-color: $special-light-grey;
+    }
   }
 }
