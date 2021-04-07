@@ -1,0 +1,43 @@
+// .extra-list {
+// }
+
+.extra-list__item {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border-top: 1px solid $special-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
+.extra-list__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.extra-list__dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-family: $font-Arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-dark-grey;
+}
+
+// .extra-list__dt {
+// }
+
+.extra-list__dd {
+  justify-self: end;
+}
+
+.extra-list__button {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}

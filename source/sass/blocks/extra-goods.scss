@@ -1,0 +1,12 @@
+.extra-goods {
+  margin-bottom: 35px;
+}
+
+.extra-goods__title {
+  margin-bottom: 33px;
+}
+
+.extra-goods__list {
+  @include list-reset;
+  margin-bottom: 40px;
+}

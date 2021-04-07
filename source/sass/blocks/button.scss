@@ -26,4 +26,24 @@
     color: rgba($basic-white, 0.3);
     background-color: $special-green;
   }
+
+  &--grey {
+    color: $basic-dark-grey;
+    background-color: $basic-grey;
+
+    &:hover {
+      color: $basic-dark-grey;
+      background-color: $special-light-grey;
+    }
+
+    &:focus {
+      color: $basic-dark-grey;
+      background-color: $special-light-grey;
+    }
+
+    &:active {
+      color: rgba($basic-dark-grey, 0.3);
+      background-color: $special-light-grey;
+    }
+  }
 }
