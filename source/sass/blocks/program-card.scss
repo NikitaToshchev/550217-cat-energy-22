@@ -25,6 +25,66 @@
       background-image: url("../img/icon/programs-pro.svg");
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 76px 20px 57px 52px;
+
+    &::before {
+      top: 80px;
+      left: auto;
+      right: -8px;
+      width: 270px;
+      height: 220px;
+    }
+
+    &--slim {
+      &::before {
+        background-image: url("../img/icon/programs-slim-tablet.svg");
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 91px;
+        right: 26px;
+        background-image: url("../img/icon/programs-pro-tablet.svg");
+      }
+
+      .program-card__description {
+        max-width: 340px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 40px 60px 52px;
+
+    &::before {
+      top: 41px;
+      left: 52px;
+      right: auto;
+      width: 135px;
+      height: 100px;
+    }
+
+    &--slim {
+      &::before {
+        background-image: url("../img/icon/programs-slim-desktop.svg");
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: 47px;
+        left: 33px;
+        background-image: url("../img/icon/programs-pro-desktop.svg");
+      }
+
+      .program-card__description {
+        max-width: max-content;
+      }
+    }
+  }
 }
 
 .program-card__title {
@@ -36,6 +96,18 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .program-card__description {
@@ -46,6 +118,20 @@
   line-height: 18px;
   color: $basic-dark-grey;
   border-bottom: 1px solid $light-grey-2;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+    max-width: max-content;
+  }
 }
 
 .program-card__link {
@@ -76,5 +162,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 57px;
   }
 }

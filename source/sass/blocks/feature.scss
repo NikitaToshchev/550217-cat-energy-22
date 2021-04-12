@@ -4,6 +4,11 @@
   width: 123px;
   border: 1px solid $special-grey;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 10px 19px 10px;
+    width: 162px;
+  }
 }
 
 .feature__value {
@@ -12,6 +17,11 @@
   line-height: 24px;
   text-align: center;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .feature__title {
@@ -28,4 +38,18 @@
   text-transform: lowercase;
   color: $basic-dark-grey;
   background-color: $smoky-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 5px;
+    width: 137px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 64px;
+    left: 11px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
 }

@@ -1,9 +1,21 @@
 .header-logo {
   display: flex;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header-logo__img {
   margin-right: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
 }
 
 // .header-logo__name {
