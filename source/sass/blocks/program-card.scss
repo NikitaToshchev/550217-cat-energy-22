@@ -5,11 +5,12 @@
 
   &::before {
     @include pseudo;
-    top: 20px;
+    top: 21px;
     left: 22px;
     width: 70px;
     height: 70px;
     background-repeat: no-repeat;
+    background-size: 72%;
   }
 
   &--slim {
@@ -23,6 +24,7 @@
       top: 23px;
       left: 13px;
       background-image: url("../img/icon/programs-pro.svg");
+      background-size: 97%;
     }
   }
 
@@ -30,24 +32,19 @@
     padding: 76px 20px 57px 52px;
 
     &::before {
-      top: 80px;
+      top: 82px;
       left: auto;
       right: -8px;
       width: 270px;
       height: 220px;
-    }
-
-    &--slim {
-      &::before {
-        background-image: url("../img/icon/programs-slim-tablet.svg");
-      }
+      background-size: 74%;
     }
 
     &--pro {
       &::before {
-        top: 91px;
-        right: 26px;
-        background-image: url("../img/icon/programs-pro-tablet.svg");
+        top: 93px;
+        right: 27px;
+        background-size: 100%;
       }
 
       .program-card__description {
@@ -65,28 +62,22 @@
       right: auto;
       width: 135px;
       height: 100px;
-    }
-
-    &--slim {
-      &::before {
-        background-image: url("../img/icon/programs-slim-desktop.svg");
-      }
+      background-size: 74%;
     }
 
     &--pro {
       &::before {
-        top: 47px;
+        top: 45px;
         left: 33px;
-        background-image: url("../img/icon/programs-pro-desktop.svg");
+        background-size: 100%;
       }
+    }
 
-      .program-card__description {
-        max-width: max-content;
-      }
+    .program-card__description {
+      max-width: max-content;
     }
   }
 }
-
 .program-card__title {
   margin: 0;
   margin-bottom: 30px;

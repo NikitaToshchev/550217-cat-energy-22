@@ -5,6 +5,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin: 0 auto;
+    width: 1440px;
   }
 }
 
@@ -22,6 +24,7 @@
   @media (min-width: $desktop-width) {
     padding: 45px 84px 43px 76px;
     position: absolute;
+    z-index: 1;
     top: 95px;
     left: 110px;
     width: 570px;
@@ -72,11 +75,39 @@
 }
 
 .contacts__map {
+  position: relative;
   margin: 0 auto;
   width: 320px;
+  height: 362px;
+
+  &::after {
+    @include pseudo;
+    top: 139px;
+    left: 134px;
+    width: 57px;
+    height: 53px;
+    background-image: url("../img/pin-mobile.png");
+  }
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    height: 400px;
+
+    &::after {
+      @include pseudo;
+      top: 147px;
+      left: 333px;
+      width: 113px;
+      height: 106px;
+      background-image: url("../img/pin.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 130px;
+      left: 908px;
+    }
   }
 
   @media (min-width: $desktop-width) {

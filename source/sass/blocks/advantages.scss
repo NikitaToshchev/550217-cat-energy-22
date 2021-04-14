@@ -26,6 +26,7 @@
   @include list-reset;
   display: grid;
   grid-row-gap: 20px;
+  counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -51,6 +52,8 @@
     background-repeat: no-repeat;
 
     &::before {
+      counter-increment: myCounter;
+      content:counter(myCounter);
       position: absolute;
       z-index: -1;
       top: -40px;
@@ -61,31 +64,6 @@
       font-size: 281px;
       line-height: 281px;
       color: $basic-grey;
-    }
-
-    &--first {
-      &::before {
-        left: 118px;
-        content: "1";
-      }
-    }
-
-    &--second {
-      &::before {
-        content: "2";
-      }
-    }
-
-    &--third {
-      &::before {
-        content: "3";
-      }
-    }
-
-    &--fourth {
-      &::before {
-        content: "4";
-      }
     }
   }
 }
@@ -99,15 +77,16 @@
 
   br {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-
-    br {
-      display: block;
-    }
   }
 }
 
