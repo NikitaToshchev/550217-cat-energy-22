@@ -6,7 +6,29 @@
   margin: 0 auto;
   width: 130px;
 }
-// .social__item {
-// }
-// .social__link {
-// }
+
+.social__link {
+  svg {
+    fill: $dull-gray;
+  }
+
+  &--fb svg {
+    fill: none;
+    stroke: $dull-gray;
+  }
+
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &--fb {
+    &:hover svg {
+      fill: none;
+      stroke: $basic-green;
+    }
+  }
+}

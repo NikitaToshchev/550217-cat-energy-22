@@ -6,6 +6,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .nav__item {
@@ -14,8 +19,20 @@
   &:first-child {
     border-top: 1px solid $special-light-grey;
   }
-}
 
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+    border: none;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
 .nav__link {
   padding: 22px 0;
@@ -27,19 +44,35 @@
   text-transform: uppercase;
   color: $basic-black;
 
-  // &--active {
-  // }
-
   &:hover {
     opacity: 0.6;
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     opacity: 0.3;
   }
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    padding: 6px 0;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $basic-white;
+
+    &--active {
+      border-bottom: 2px solid $basic-white;
+    }
   }
 }
 

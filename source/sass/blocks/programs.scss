@@ -1,8 +1,36 @@
 .programs {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
-// .programs__list {
-// }
-.programs__item:first-of-type {
-  margin-bottom: 20px;
+
+.programs__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programs__item {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+
+  &:first-of-type {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 }

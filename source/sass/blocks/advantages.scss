@@ -1,48 +1,97 @@
 .advantages {
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 102px;
+    border-bottom: 1px solid $special-light-grey-2;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-bottom: 84px;
+  }
 }
 
 .advantages__title {
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__list {
   @include list-reset;
   display: grid;
   grid-row-gap: 20px;
+  counter-reset: myCounter;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 135px;
+    grid-column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
 }
 
 .advantages__item {
   display: flex;
   align-items: center;
-  background-repeat: no-repeat;
 
-  // &--first {
-  // }
+  @media (min-width: $tablet-width) {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 250px;
+    background-repeat: no-repeat;
 
-  // &--second {
-  // }
-
-  // &--third {
-  // }
-
-  // &--fourth {
-  // }
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      left: 112px;
+      width: 70px;
+      height: 230px;
+      font-family: $font-Oswald;
+      font-size: 281px;
+      line-height: 281px;
+      color: $basic-grey;
+    }
+  }
 }
 
 .advantages__description {
   margin: 0;
-  max-width: 200px;
   font-family: $font-Arial;
   font-size: 14px;
   line-height: 18px;
   color: $basic-dark-grey;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
 
 .advantages__image {
   margin-right: 20px;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: $basic-green;
   background-repeat: no-repeat;
@@ -62,5 +111,11 @@
 
   &--alarm {
     background-image: url("../img/icon/adv-alarm.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
   }
 }
