@@ -53,7 +53,7 @@
 
     &::before {
       counter-increment: myCounter;
-      content:counter(myCounter);
+      content: counter(myCounter);
       position: absolute;
       z-index: -1;
       top: -40px;
@@ -80,13 +80,12 @@
 
     @media (min-width: $tablet-width) {
       display: block;
-
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
 
