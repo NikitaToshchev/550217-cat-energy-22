@@ -1,5 +1,17 @@
-// .nav {
-// }
+.nav {
+  &--contrast {
+    @media (min-width: $desktop-width) {
+      .nav__link {
+        color: $basic-white;
+
+        &--active {
+          border-color: $basic-white;
+        }
+      }
+    }
+  }
+}
+
 .nav__list {
   @include list-reset;
   margin: 0 auto;
@@ -68,11 +80,6 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $basic-white;
-
-    &--active {
-      border-bottom: 2px solid $basic-white;
-    }
   }
 }
 
