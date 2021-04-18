@@ -1,0 +1,66 @@
+.decorate-line {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    z-index: 1;
+    left: 0;
+    top: 66%;
+    transform: translate(0, -50%);
+    height: 2px;
+    width: 100vw;
+    background-color: $basic-green;
+  }
+
+  &--contacts {
+    &::before {
+      top: 31%;
+
+      @media (min-width: $tablet-width) {
+        top: 64%;
+      }
+    }
+  }
+}
+
+.decorate-line__title {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  padding-right: 24px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic-black;
+  background-color: $basic-white;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: -24px;
+    width: 24px;
+    height: 100%;
+    background-color: $basic-white;
+  }
+
+  &--contacts {
+    width: 200px;
+    padding-right: 0;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding-right: 40px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 40px;
+
+    &::before {
+      width: 40px;
+      left: -40px;
+    }
+  }
+}

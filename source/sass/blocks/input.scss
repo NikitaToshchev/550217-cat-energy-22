@@ -6,17 +6,30 @@
   color: $basic-dark-grey;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   span {
     flex-shrink: 0;
     margin-right: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
   }
 
   input {
     width: 100%;
-    padding: 12px 10px 13px 15px;
+    padding: 12px 10px 13px 14px;
     font: inherit;
     text-transform: uppercase;
     border: 1px solid $special-light-grey-1;
+
+    @media (min-width: $tablet-width) {
+      padding: 11px 10px 12px 15px;
+    }
   }
 
   input::-webkit-input-placeholder,
@@ -30,18 +43,36 @@
   }
 
   textarea {
-    padding: 10px 13px;
+    padding: 10px 15px;
     font: inherit;
     text-transform: uppercase;
     width: 100%;
     min-height: 150px;
     resize: none;
     border-color: $special-light-grey-1;
+
+    @media (min-width: $tablet-width) {
+      padding: 10px 17px;
+      min-height: 177px;
+    }
+  }
+
+  &--email,
+  &--tel {
+    span {
+      margin-right: 10px;
+
+      @media (min-width: $tablet-width) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &--email {
+    input {
+      @media (min-width: $tablet-width) {
+        padding: 11px 10px 12px 24px;
+      }
+    }
   }
 }
-
-// .input--email {
-// }
-
-// .input--tel {
-// }
