@@ -33,15 +33,6 @@
     }
   }
 
-  &--check {
-    &::before {
-      top: -5px;
-      border-radius: 0;
-    }
-  }
-}
-
-.choice__input:checked + .choice__label {
   &::after {
     @include pseudo;
     top: 1px;
@@ -50,6 +41,7 @@
     height: 13px;
     border-radius: 50%;
     background-color: $basic-green;
+    opacity: 0;
 
     @media (min-width: $tablet-width) {
       top: 4px;
@@ -60,6 +52,11 @@
   }
 
   &--check {
+    &::before {
+      top: -5px;
+      border-radius: 0;
+    }
+
     &::after {
       top: 3px;
       left: -24px;
@@ -73,6 +70,12 @@
         left: -32px;
       }
     }
+  }
+}
+
+.choice__input:checked + .choice__label {
+  &::after {
+    opacity: 1;
   }
 }
 
