@@ -3,30 +3,78 @@
 
 .extra-list__item {
   padding-top: 13px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
   border-top: 1px solid $special-grey;
 
   &:last-child {
     border-bottom: 1px solid $special-grey;
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 12px;
+    padding: 24px 38px 28px 38px;
+    border: 1px solid $special-grey;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr min-content;
+    padding: 15px 1px 14px 1px;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .extra-list__title {
   margin: 0;
+  margin-bottom: 14px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    grid-column: 1 / 2;
+  }
 }
 
 .extra-list__dl {
   display: grid;
   grid-template-columns: auto 1fr;
+  margin: 0;
+  margin-bottom: 15px;
   font-family: $font-Arial;
   font-size: 14px;
   line-height: 14px;
   color: $basic-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin-bottom: 0;
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+    margin-right: 38px;
+    padding-top: 13px;
+    min-width: 287px;
+  }
 }
 
 // .extra-list__dt {
@@ -34,10 +82,27 @@
 
 .extra-list__dd {
   justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    min-width: 52px;
+    text-align: right;
+  }
 }
 
 .extra-list__button {
   padding: 10px;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 92px;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+  }
 }

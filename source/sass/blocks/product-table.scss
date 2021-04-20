@@ -4,13 +4,28 @@
   line-height: 16px;
   color: $basic-dark-grey;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    border-spacing: 3px;
+  }
 }
 
-// .product-table__row {
-// }
+.product-table__row {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey;
+  }
+}
 
 .product-table__cell {
+  padding: 0;
+
   &:last-child {
     text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 9px;
   }
 }
