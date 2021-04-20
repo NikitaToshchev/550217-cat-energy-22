@@ -12,7 +12,7 @@
 
 .contacts__text {
   padding-top: 12px;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -104,6 +104,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
+
     &::after {
       top: 130px;
       left: 908px;
