@@ -65,6 +65,12 @@
       line-height: 281px;
       color: $basic-grey;
     }
+
+    &--first {
+      &::before {
+        left: 118px;
+      }
+    }
   }
 }
 
@@ -81,11 +87,11 @@
     @media (min-width: $tablet-width) {
       display: block;
     }
+  }
 
-    @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 24px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

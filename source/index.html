@@ -24,7 +24,8 @@
         <img class="header-logo__name" src="img/logo-name-mobile.svg" width="101" height="18" alt="">
       </a>
 
-      <nav class="page-header__nav nav nav--contrast">
+      <nav class="page-header__nav nav nav--closed nav--no-js nav--contrast">
+        <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link nav__link--active" href="#">Главная</a>
@@ -36,7 +37,6 @@
             <a class="nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-        <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
       </nav>
     </div>
 
@@ -85,7 +85,7 @@
         <h2 class="advantages__title title">Как это работает</h2>
 
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--first">
             <div class="advantages__image advantages__image--leaf"></div>
             <p class="advantages__description">Функциональное питание содержит только полезные питательные
               вещества.</p>
@@ -118,7 +118,7 @@
 
         <div class="example__container container">
 
-          <div class="example__column-wrapper">
+          <div class="example__column-wrapper example__column-wrapper--left">
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
               Energy
               Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br>
@@ -141,20 +141,27 @@
 
           <div class="example__column-wrapper example__column-wrapper--right">
             <div class="example__progress progress">
-              <img class="progress__img progress__img--before" src="img/cat-fat-mobile.png" width="311" height="232"
-                alt="Кот до">
-              <img class="progress__img progress__img--after" src="img/cat-skinny-mobile.png" width="254" height="240"
-                alt="Кот после">
-              <!-- <img class="progress__img progress__img--before" src="img/cat-fat.png" width="677" height="620"
-                alt="Кот до"> -->
-              <!-- <img class="progress__img progress__img--before" src="img/cat-fat.png" width="677" height="536"
-                alt="Кот до"> -->
+              <div class="progress__img-column-wrapper">
+                <div class="progress__img-wrapper progress__img-wrapper--left">
+                  <img class="progress__img progress__img--before" src="img/cat-fat-mobile.png" width="311" height="232"
+                    alt="Кот до">
+                  <!-- <img class="progress__img progress__img--before" src="img/cat-fat.png" alt="Кот до"> -->
+                </div>
+
+                <div class="progress__img-wrapper progress__img-wrapper--right">
+                  <img class="progress__img progress__img--after" src="img/cat-skinny-mobile.png" width="254"
+                    height="240" alt="Кот после">
+                  <!-- <img class="progress__img progress__img--after" src="img/cat-skinny.png" alt="Кот после"> -->
+                </div>
+              </div>
+
               <div class="progress__buttons">
                 <button class="progress__button" type="button">Было</button>
                 <div class="progress__bar">
                   <span class="progress__scale"></span>
                 </div>
-                <button class="progress__button" type="button">Стало</button>
+                <input class="progress__range" type="range">
+                <button class="progress__button progress__button--right" type="button">Стало</button>
               </div>
             </div>
           </div>
@@ -229,7 +236,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
