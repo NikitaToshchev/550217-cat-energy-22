@@ -21,8 +21,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 629px;
+    margin-bottom: 526px;
     padding-top: 54px;
+    text-align: left;
     color: $basic-black;
 
     &::after {
@@ -100,7 +101,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    top: 200px;
+    top: 202px;
     left: 29px;
   }
 
@@ -116,7 +117,6 @@
     margin-left: 3px;
     padding: 17px 26px;
     width: auto;
-    float: left;
     font-size: 20px;
     line-height: 20px;
   }
