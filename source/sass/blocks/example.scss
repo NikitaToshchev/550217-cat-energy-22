@@ -1,10 +1,11 @@
 .example {
+  position: relative;
   padding-bottom: 36px;
   background-color: $smoky-white;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 80px;
-    background-image: linear-gradient(to bottom, $basic-white 57.4%, $smoky-white 44.6%);
+    padding-bottom: 68px;
+    background-image: linear-gradient(to bottom, $basic-white 57.3%, $smoky-white 44.6%);
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +25,6 @@
   @media (min-width: $desktop-width) {
     position: relative;
     display: flex;
-    justify-content: space-between;
 
     &::before {
       @include pseudo;
@@ -43,6 +43,10 @@
     padding-top: 70px;
     padding-bottom: 33px;
     width: 570px;
+
+    &--left {
+      margin-right: 47px;
+    }
 
     &--right {
       padding-top: 360px;
@@ -104,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
+    width: 436px;
   }
 }
 
@@ -170,6 +175,11 @@
 }
 
 .example__progress {
-  margin-left: -27px;
-  margin-right: -18px;
+  margin-left: -32px;
+  margin-right: -21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 16px;
+  }
 }

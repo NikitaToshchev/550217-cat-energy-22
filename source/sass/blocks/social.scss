@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  width: 130px;
+  width: 134px;
 }
 
 .social__link {
@@ -26,6 +26,10 @@
   }
 
   &--fb {
+    position: relative;
+    top: -3px;
+    left: -4px;
+
     &:hover svg {
       fill: none;
       stroke: $basic-green;

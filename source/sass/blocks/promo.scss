@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   margin-bottom: 22px;
-  padding-top: 29px;
+  padding-top: 26px;
   color: $basic-white;
   font-weight: 400;
   text-align: center;
@@ -21,8 +21,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 629px;
-    padding-top: 52px;
+    margin-bottom: 526px;
+    padding-top: 54px;
+    text-align: left;
     color: $basic-black;
 
     &::after {
@@ -32,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 696px;
-    margin-bottom: 82px;
+    margin-bottom: 90px;
     padding-top: 103px;
 
     &::after {
@@ -73,7 +74,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 122px;
+    margin-top: 132px;
     margin-bottom: 39px;
   }
 }
@@ -85,14 +86,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 51px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
@@ -100,7 +101,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    top: 200px;
+    top: 202px;
     left: 29px;
   }
 
@@ -113,11 +114,14 @@
 
 .promo__button {
   @media (min-width: $tablet-width) {
-    padding: 18px 28px;
+    margin-left: 3px;
+    padding: 17px 26px;
     width: auto;
-    // По другому не знаю как кнопку к левому краю прижать
-    float: left;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

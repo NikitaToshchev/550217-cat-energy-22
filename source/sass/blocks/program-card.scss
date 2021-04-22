@@ -98,7 +98,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
   }
 }
 
@@ -160,5 +160,9 @@
     font-size: 20px;
     line-height: 30px;
     padding-right: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
   }
 }
