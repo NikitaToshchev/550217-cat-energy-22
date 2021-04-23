@@ -16,19 +16,34 @@
     margin-right: 15px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 20px;
+      margin-right: 18px;
     }
   }
 
   input {
     width: 100%;
-    padding: 12px 10px 13px 14px;
+    padding: 12px 40px 13px 14px;
     font: inherit;
     text-transform: uppercase;
     border: 1px solid $special-light-grey-1;
 
+    &:hover {
+      border-color: $special-grey;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $basic-dark-grey;
+      box-shadow: 0 0 0 2px $basic-dark-grey;
+    }
+
+    &:invalid {
+      border-color: $intense-pink;
+      box-shadow: 0 0 0 2px $intense-pink;
+    }
+
     @media (min-width: $tablet-width) {
-      padding: 11px 10px 12px 15px;
+      padding: 11px 40px 12px 15px;
     }
   }
 
@@ -43,13 +58,23 @@
   }
 
   textarea {
-    padding: 10px 15px;
+    padding: 10px 13px;
     font: inherit;
     text-transform: uppercase;
     width: 100%;
     min-height: 150px;
     resize: none;
     border-color: $special-light-grey-1;
+
+    &:hover {
+      border-color: $special-grey;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $basic-dark-grey;
+      box-shadow: 0 0 0 2px $basic-dark-grey;
+    }
 
     @media (min-width: $tablet-width) {
       padding: 10px 17px;
@@ -59,6 +84,8 @@
 
   &--email,
   &--tel {
+    position: relative;
+
     span {
       margin-right: 10px;
 
@@ -66,13 +93,50 @@
         margin-right: 16px;
       }
     }
+
+    svg {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+
+      @media (min-width: $tablet-width) {
+        top: 18px;
+        right: 18px;
+      }
+    }
   }
 
   &--email {
-    input {
-      @media (min-width: $tablet-width) {
-        padding: 11px 10px 12px 24px;
+    svg {
+      stroke: $special-dark-grey;
+    }
+
+    input:focus + svg {
+      stroke: $basic-green;
+    }
+
+    input:invalid + svg {
+      stroke: $intense-pink;
+    }
+
+    @media (min-width: $tablet-width) {
+      input {
+        padding: 11px 40px 12px 23px;
       }
+    }
+  }
+
+  &--tel {
+    svg {
+      fill: $special-dark-grey;
+    }
+
+    input:focus + svg {
+      fill: $basic-green;
+    }
+
+    input:invalid + svg {
+      fill: $intense-pink;
     }
   }
 }
