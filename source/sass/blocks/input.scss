@@ -37,11 +37,6 @@
       box-shadow: 0 0 0 2px $basic-dark-grey;
     }
 
-    &:invalid {
-      border-color: $intense-pink;
-      box-shadow: 0 0 0 2px $intense-pink;
-    }
-
     @media (min-width: $tablet-width) {
       padding: 11px 40px 12px 15px;
     }
@@ -94,7 +89,7 @@
       }
     }
 
-    svg {
+    .input__svg {
       position: absolute;
       top: 14px;
       right: 14px;
@@ -107,16 +102,12 @@
   }
 
   &--email {
-    svg {
+    .input__svg {
       stroke: $special-dark-grey;
     }
 
-    input:focus + svg {
+    input:focus + .input__svg {
       stroke: $basic-green;
-    }
-
-    input:invalid + svg {
-      stroke: $intense-pink;
     }
 
     @media (min-width: $tablet-width) {
@@ -127,15 +118,26 @@
   }
 
   &--tel {
-    svg {
+    .input__svg {
       fill: $special-dark-grey;
     }
 
-    input:focus + svg {
+    input:focus + .input__svg {
       fill: $basic-green;
     }
+  }
 
-    input:invalid + svg {
+  &--error {
+    input {
+      border-color: $intense-pink;
+      box-shadow: 0 0 0 2px $intense-pink;
+    }
+
+    input:invalid + .input__svg--email {
+      stroke: $intense-pink;
+    }
+
+    input:invalid + .input__svg--tel {
       fill: $intense-pink;
     }
   }
