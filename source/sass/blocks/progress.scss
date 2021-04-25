@@ -148,8 +148,8 @@
   @media (min-width: $tablet-width) {
     display: block;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     margin-left: 23px;
     margin-right: 22px;
     width: 428px;
@@ -165,12 +165,11 @@
       cursor: pointer;
       background-color: $light-grey;
       border-radius: 6px;
-      border: 0px solid #000101;
     }
 
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
-              appearance: none;
+      appearance: none;
       margin-top: -14px;
       width: 34px;
       height: 34px;
@@ -178,13 +177,13 @@
       border-radius: 50%;
       background-color: $basic-green;
       -webkit-box-shadow: 0 4px 4px rgba($basic-black, 0.25), inset 0 0 0 12px $basic-white;
-              box-shadow: 0 4px 4px rgba($basic-black, 0.25), inset 0 0 0 12px $basic-white;
+      box-shadow: 0 4px 4px rgba($basic-black, 0.25), inset 0 0 0 12px $basic-white;
       cursor: pointer;
 
       &:hover {
         -webkit-box-shadow: 0 2px 2px rgba($basic-black, 0.25), inset 0 0 0 12px $basic-white;
-                box-shadow: 0 2px 2px rgba($basic-black, 0.25), inset 0 0 0 12px $basic-white;
-        }
+        box-shadow: 0 2px 2px rgba($basic-black, 0.25), inset 0 0 0 12px $basic-white;
+      }
 
       &:active {
         border: 1px solid $basic-green;
@@ -197,12 +196,11 @@
       cursor: pointer;
       background-color: $light-grey;
       border-radius: 6px;
-      border: 0px solid #000101;
     }
 
     &::-moz-range-thumb {
       -moz-appearance: none;
-           appearance: none;
+      appearance: none;
       margin-top: -14px;
       width: 34px;
       height: 34px;
@@ -214,7 +212,7 @@
 
       &:hover {
         box-shadow: 0 2px 2px rgba($basic-black, 0.25), inset 0 0 0 12px $basic-white;
-        }
+      }
 
       &:active {
         border: 1px solid $basic-green;
