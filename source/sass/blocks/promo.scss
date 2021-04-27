@@ -18,11 +18,15 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-bg-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 526px;
-    padding-top: 54px;
+    padding-top: 46px;
     text-align: left;
     color: $basic-black;
 
@@ -33,14 +37,18 @@
 
   @media (min-width: $desktop-width) {
     min-height: 696px;
-    margin-bottom: 90px;
+    margin-bottom: 81px;
     padding-top: 103px;
 
     &::after {
       content: "";
       width: 50%;
-      height: 703px;
+      height: 694px;
       background-image: url("../img/promo-bg-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-bg-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -74,7 +82,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 132px;
+    margin-top: 122px;
     margin-bottom: 39px;
   }
 }
@@ -98,17 +106,24 @@
 }
 
 .promo__image {
+  width: 280px;
+  height: 270px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
     top: 202px;
     left: 29px;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    z-index: 1;
+    z-index: 0;
     top: -83px;
     left: 558px;
+    width: 552px;
+    height: 499px;
   }
 }
 

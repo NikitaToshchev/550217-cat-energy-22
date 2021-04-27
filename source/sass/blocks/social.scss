@@ -12,7 +12,19 @@
     fill: $dull-gray;
   }
 
+  &--vk svg {
+    width: 23px;
+    height: 16px;
+  }
+
+  &--inst svg {
+    width: 16px;
+    height: 16px;
+  }
+
   &--fb svg {
+    width: 22px;
+    height: 22px;
     fill: none;
     stroke: $dull-gray;
   }
@@ -33,6 +45,28 @@
     &:hover svg {
       fill: none;
       stroke: $basic-green;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: -5px;
+      left: -5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk svg {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--inst svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb svg {
+      width: 28px;
+      height: 33px;
     }
   }
 }

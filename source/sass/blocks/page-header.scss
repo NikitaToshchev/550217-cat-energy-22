@@ -11,19 +11,19 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 30px 0 30px;
+    padding: 12px 30px 0 9px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     width: 1440px;
-    padding: 47px 110px 0 110px;
+    padding: 42px 110px 0 90px;
   }
 }
 
 .page-header__wrapper-promo {
   @media (min-width: $desktop-width) {
-    margin-top: -123px;
+    margin-top: -132px;
     z-index: -1;
   }
 }
@@ -47,6 +47,12 @@
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 1;
-    padding-top: 17px;
+    padding-top: 24px;
+    width: 550px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    width: 720px;
   }
 }
