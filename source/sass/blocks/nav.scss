@@ -103,6 +103,13 @@
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 22px;
+    right: 0;
   }
 }
 
@@ -114,15 +121,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 36px;
+    margin-left: 36px;
     border: none;
 
     &:first-child {
-      border-top: none;
-    }
-
-    &:last-child {
       margin-right: 0;
+      border-top: none;
     }
   }
 }
