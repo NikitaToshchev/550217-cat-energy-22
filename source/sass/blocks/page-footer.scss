@@ -53,6 +53,10 @@
   }
 }
 
+.page-footer__copyright-logo {
+  fill: $dull-gray;
+}
+
 .page-footer__copyright-link {
   display: flex;
   justify-content: space-between;
@@ -63,7 +67,7 @@
   color: $basic-dark-grey;
 
   &:hover {
-    .page-footer__copyright-logo path {
+    .page-footer__copyright-logo {
       fill: $basic-green;
     }
   }
