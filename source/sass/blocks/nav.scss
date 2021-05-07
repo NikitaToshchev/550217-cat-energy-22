@@ -129,6 +129,10 @@
       border-top: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+  }
 }
 
 .nav__link {
@@ -151,7 +155,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 6px 0;
+    padding: 6px 0 7px 0;
     display: block;
     font-size: 18px;
     line-height: 24px;
@@ -165,5 +169,6 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 5px 0 6px 0;
   }
 }

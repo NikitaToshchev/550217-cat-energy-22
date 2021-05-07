@@ -70,7 +70,7 @@
 .progress__buttons {
   display: flex;
   justify-content: center;
-  margin-left: 10px;
+  margin-left: 17px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -121,7 +121,7 @@
 .progress__bar {
   position: relative;
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 18px;
   margin-right: 18px;
   width: 82px;
   height: 12px;

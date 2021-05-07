@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-
-  <link rel="stylesheet" href="css/style.css">
 
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -132,8 +132,8 @@
           <div class="example__column-wrapper example__column-wrapper--left">
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
               Energy
-              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br>
-              по-прежнему спит по 16 часов в день.</p>
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и <br> по-прежнему
+              спит по 16 часов в день.</p>
             <div class="example__inner">
               <div class="example__list">
                 <div class="example__item feature">
@@ -146,7 +146,7 @@
                   <p class="feature__title">Затрачено времени</p>
                 </div>
               </div>
-              <p class="example__price">Затраты на питание: <span class="example__price-value">15 000 руб</span></p>
+              <p class="example__price">Затраты на питание: <span class="example__price-value">15 000 руб.</span></p>
             </div>
           </div>
 
@@ -155,6 +155,9 @@
               <div class="progress__img-column-wrapper">
                 <div class="progress__img-wrapper progress__img-wrapper--left">
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat-fat-mobile.webp 1x, img/cat-fat-mobile@2x.webp 2x">
                     <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
                     <img class="progress__img progress__img--before" src="img/cat-fat-mobile.png"
                       srcset="img/сat-fat-mobile@2x.png 2x" width="311" height="232" alt="Кот до">
@@ -163,6 +166,9 @@
 
                 <div class="progress__img-wrapper progress__img-wrapper--right">
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat-skinny-mobile.webp 1x, img/cat-skinny-mobile@2x.webp 2x">
                     <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
                     <img class="progress__img progress__img--after" src="img/cat-skinny-mobile.png"
                       srcset="img/сat-skinny-mobile@2x.png 2x" width="254" height="240" alt="Кот после">
@@ -182,8 +188,6 @@
           </div>
         </div>
       </div>
-
-      </div>
     </section>
 
     <section class="contacts">
@@ -196,7 +200,7 @@
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716140034!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619540445864!5m2!1sru!2sru"
-          width="100%" height="100%" allowfullscreen=""></iframe>
+          allowfullscreen=""></iframe>
       </div>
     </section>
 
@@ -214,21 +218,21 @@
           <li class="social__item">
             <a class="social__link social__link--vk" href="#" aria-label="Вконтакте">
               <svg width="23" height="16">
-                <use xlink:href="img/sprite.svg#social-icon-vk"></use>
+                <use xlink:href="img/sprite.svg#social-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--inst" href="#" aria-label="Instagram">
               <svg width="16" height="16">
-                <use xlink:href="img/sprite.svg#social-icon-inst"></use>
+                <use xlink:href="img/sprite.svg#social-inst"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="#" aria-label="Facebook">
               <svg width="22" height="22">
-                <use xlink:href="img/sprite.svg#social-icon-fb"></use>
+                <use xlink:href="img/sprite.svg#social-fb"></use>
               </svg>
             </a>
           </li>
@@ -239,13 +243,13 @@
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="page-footer__copyright-developer">HTML Academy</span>
           <svg class="page-footer__copyright-logo" width="27" height="34">
-            <use xlink:href="img/sprite.svg#logo-htmlacademy-icon"></use>
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/menu.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
