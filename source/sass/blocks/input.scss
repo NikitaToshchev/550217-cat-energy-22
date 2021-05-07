@@ -38,7 +38,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 11px 40px 12px 15px;
+      padding: 11px 40px 12px 16px;
     }
   }
 
@@ -77,6 +77,15 @@
     }
   }
 
+  &--weight,
+  &--age {
+    @media (min-width: $tablet-width) {
+      input {
+        padding-left: 20px;
+      }
+    }
+  }
+
   &--email,
   &--tel {
     position: relative;
@@ -97,6 +106,10 @@
       @media (min-width: $tablet-width) {
         top: 18px;
         right: 18px;
+
+        &--email {
+          top: 20px;
+        }
       }
     }
   }
@@ -127,18 +140,16 @@
     }
   }
 
-  &--error {
-    input {
-      border-color: $intense-pink;
-      box-shadow: 0 0 0 2px $intense-pink;
-    }
+  input:invalid:not(:placeholder-shown) {
+    border-color: $intense-pink;
+    box-shadow: 0 0 0 2px $intense-pink;
+  }
 
-    input:invalid + .input__svg--email {
-      stroke: $intense-pink;
-    }
+  input:invalid:not(:placeholder-shown) + .input__svg--email {
+    stroke: $intense-pink;
+  }
 
-    input:invalid + .input__svg--tel {
-      fill: $intense-pink;
-    }
+  input:invalid:not(:placeholder-shown) + .input__svg--tel {
+    fill: $intense-pink;
   }
 }

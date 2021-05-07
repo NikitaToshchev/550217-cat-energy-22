@@ -20,6 +20,9 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .advantages__list {
@@ -30,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 135px;
+    grid-row-gap: 133px;
     grid-column-gap: 60px;
   }
 
