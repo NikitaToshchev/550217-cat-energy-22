@@ -22,7 +22,8 @@
 
   input {
     width: 100%;
-    padding: 12px 40px 13px 14px;
+    height: 45px;
+    padding: 10px 40px 10px 14px;
     font: inherit;
     text-transform: uppercase;
     border: 1px solid $special-light-grey-1;
@@ -38,7 +39,8 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 11px 40px 12px 16px;
+      padding-left: 16px;
+      height: 52px;
     }
   }
 
@@ -94,7 +96,7 @@
       margin-right: 10px;
 
       @media (min-width: $tablet-width) {
-        margin-right: 16px;
+        margin-right: 18px;
       }
     }
 

@@ -148,6 +148,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    /* stylelint-disable property-no-vendor-prefix */
     display: block;
     -webkit-appearance: none;
     -moz-appearance: none;
